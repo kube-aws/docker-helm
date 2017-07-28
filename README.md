@@ -3,7 +3,13 @@ Docker image containing kubernetes helm.
 
 The image is based on alpine.
 
-Usage: `docker run kube-aws/helm`
+Usage: `docker run quay.io/kube-aws/helm:v2.5.1`
+
+# Building and publishing an image
+
+```
+$ docker build -t quay.io/kube-aws/helm:v2.5.1 . && docker push quay.io/kube-aws/helm:v2.5.1
+```
 
 # Acknowledgement
 
