@@ -1,7 +1,7 @@
 FROM alpine:3.6
-MAINTAINER Mario Siegenthaler <mario.siegenthaler@linkyard.ch>
+MAINTAINER Yusuke KUOKA <ykuoka@gmail.com>
 
-RUN apk add --update --no-cache ca-certificates git
+RUN apk add --update --no-cache ca-certificates
 
 ENV VERSION v2.5.1
 ENV FILENAME helm-${VERSION}-linux-amd64.tar.gz
