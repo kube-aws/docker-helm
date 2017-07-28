@@ -1,7 +1,7 @@
 FROM alpine:3.6
 MAINTAINER Yusuke KUOKA <ykuoka@gmail.com>
 
-RUN apk add --update --no-cache ca-certificates
+RUN apk add --update --no-cache ca-certificates bash
 
 ENV VERSION v2.5.1
 ENV FILENAME helm-${VERSION}-linux-amd64.tar.gz
@@ -14,4 +14,4 @@ RUN apk add --update -t deps curl tar gzip \
   && apk del --purge deps curl tar gzip \
   && rm -rf /tmp
 
-ENTRYPOINT ["/bin/helm"]
+CMD ["/bin/helm"]
