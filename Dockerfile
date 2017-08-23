@@ -3,7 +3,7 @@ MAINTAINER Yusuke KUOKA <ykuoka@gmail.com>
 
 RUN apk add --update --no-cache ca-certificates bash
 
-ENV VERSION v2.5.1
+ENV VERSION v2.6.0
 ENV FILENAME helm-${VERSION}-linux-amd64.tar.gz
 
 WORKDIR /
